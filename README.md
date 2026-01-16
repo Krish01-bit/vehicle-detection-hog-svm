@@ -1,11 +1,14 @@
-🚗 Vehicle Detection Using HOG and SVM
+##🚗 Vehicle Detection Using HOG and SVM
 
-📌 Project Overview
+##📌 Project Overview
+```
 This project implements a classical computer vision and machine learning approach for detecting vehicles in road videos using Histogram of Oriented Gradients (HOG) features and a Support Vector Machine (SVM) classifier.
 The system is trained using labeled vehicle and non-vehicle images. During detection, a sliding window technique is applied on video frames, and detections are refined using heatmap thresholding to reduce false positives.
 This project demonstrates feature-based object detection without using deep learning models.
+```
 
-🧠 Methodology
+##🧠 Methodology
+```
 The vehicle detection pipeline consists of the following stages:
 Image Preprocessing
     Resize images
@@ -24,8 +27,10 @@ Heatmap & Thresholding
     Combine multiple detections and suppress false positives
 Bounding Box Output
     Draw rectangles around detected vehicles
+```
 
-📁 Project Structure
+##📁 Project Structure
+```
 svm-vehicle-detector/
 │
 ├── descriptor.py        # Feature extraction functions (HOG, color, spatial)
@@ -43,18 +48,21 @@ svm-vehicle-detector/
 ├── test_video.mp4       # Sample test video
 ├── README.md
 └── INSTRUCTIONS.md
+```
 
-📊 Dataset
+##📊 Dataset
+```
 The project uses publicly available vehicle datasets:
 GTI Vehicle Image Database
 KITTI Vision Benchmark Suite
 These datasets contain labeled vehicle and non-vehicle images used for training the SVM classifier.
+```
 
-⚠️ Due to large size and licensing reasons, the dataset is not included in this repository.
+##⚠️ Due to large size and licensing reasons, the dataset is not included in this repository.
 You can download the dataset from:
 https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013
 
-▶️ How to Run the Project
+##▶️ How to Run the Project
 1. Install Required Libraries
 pip install numpy opencv-python scikit-image scikit-learn matplotlib
 2. Set Dataset Paths
@@ -68,27 +76,32 @@ Extract features
 Train SVM classifier
 Run vehicle detection on the test video
 
-✅ Output
+##✅ Output
+```
 The output video frames display:
 Green bounding boxes around detected vehicles
 Heatmap-based filtering to reduce false positives
 Sample output images are available in the images/ folder.
-
-⚠️ Limitations
+``` 
+##⚠️ Limitations
+```
 Sensitive to lighting and background patterns
 Detection accuracy depends on dataset quality
 Slower than deep learning methods
 May produce false positives
 This approach is mainly for educational and academic purposes.
-
-🚀 Future Improvements
+```
+##🚀 Future Improvements
+```
 Replace SVM with deep learning detectors (YOLO, SSD, Faster R-CNN)
 Train on larger datasets
 Improve multi-scale detection
 Optimize speed for real-time applications
-
-👨‍🎓 Academic Note
+```
+##👨‍🎓 Academic Note
+```
 This project was implemented as part of a college mini-project to understand:
 Feature extraction techniques
 Classical machine learning classifiers
 Object detection pipelines
+```
